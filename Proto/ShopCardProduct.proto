@@ -17,8 +17,8 @@ message ShopCardProduct {
 	uint32 days = 5;
 	uint32 remain_reward_days = 6;
 	uint32 card_product_type = 7;
-	optional ResinCard resin_card = 101;
-	//oneof NCLJBPBPGCH {
-	//	ResinCard resin_card = 101;
-	//}
+	//optional ResinCard resin_card = 101;
+	oneof NCLJBPBPGCH {
+		ResinCard resin_card = 101;
+	}
 }
