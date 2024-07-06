@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "LunaRiteHintStatusType.proto";
+
+message LunaRiteAreaInfo {
+	uint32 challenge_index = 1;
+	LunaRiteHintStatusType hint_status = 3;
+	uint32 area_id = 4;
+	repeated uint32 OPKHJCEJKMB = 13;
+	repeated uint32 KJFHJMOEFDF = 15;
+}

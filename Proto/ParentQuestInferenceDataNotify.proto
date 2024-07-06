@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "InferencePageInfo.proto";
+
+// CmdId: 29190
+message ParentQuestInferenceDataNotify {
+	repeated InferencePageInfo inference_page_list = 6;
+	uint32 parent_quest_id = 7;
+}

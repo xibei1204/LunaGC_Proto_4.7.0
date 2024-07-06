@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "InvestigationMonster.proto";
+
+// CmdId: 25460
+message GetInvestigationMonsterRsp {
+	bool is_for_mark = 1;
+	repeated InvestigationMonster monster_list = 5;
+	int32 retcode = 12;
+}

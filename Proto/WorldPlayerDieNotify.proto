@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "AbilityString.proto";
+import "PlayerDieType.proto";
+
+// CmdId: 27386
+message WorldPlayerDieNotify {
+	PlayerDieType die_type = 3;
+	uint32 NFMGNDNIONB = 6;
+	AbilityString GDGEEKHNNLH = 12;
+	uint32 CMFMJLIALCD = 15;
+	oneof entity {
+		uint32 monster_id = 13;
+		uint32 gadget_id = 1;
+	}
+}

@@ -1,0 +1,8 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 6293
+message GetHomeLevelUpRewardRsp {
+	int32 retcode = 1;
+	uint32 level = 3;
+}

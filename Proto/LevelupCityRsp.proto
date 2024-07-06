@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "CityInfo.proto";
+
+// CmdId: 2488
+message LevelupCityRsp {
+	uint32 area_id = 2;
+	int32 retcode = 4;
+	CityInfo city_info = 5;
+	uint32 scene_id = 10;
+}

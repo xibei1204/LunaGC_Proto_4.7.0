@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 29667
+message LuaSetOptionNotify {
+	enum LuaOptionType {
+		LUA_OPTION_NONE = 0;
+		LUA_OPTION_PLAYER_INPUT = 1;
+	}
+
+	LuaOptionType option_type = 1;
+	string lua_set_param = 9;
+}
