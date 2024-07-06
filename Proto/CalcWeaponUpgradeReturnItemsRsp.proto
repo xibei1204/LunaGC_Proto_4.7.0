@@ -1,0 +1,11 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+import "ItemParam.proto";
+
+// CmdId: 22714
+message CalcWeaponUpgradeReturnItemsRsp {
+	uint64 target_weapon_guid = 3;
+	repeated ItemParam item_param_list = 4;
+	int32 retcode = 8;
+}

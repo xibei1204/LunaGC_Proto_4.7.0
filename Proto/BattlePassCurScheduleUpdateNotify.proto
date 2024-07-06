@@ -1,0 +1,9 @@
+syntax = "proto3";
+option java_package = "emu.grasscutter.net.proto";
+
+
+// CmdId: 23013
+message BattlePassCurScheduleUpdateNotify {
+	bool have_cur_schedule = 3;
+	BattlePassSchedule cur_schedule = 12;
+}

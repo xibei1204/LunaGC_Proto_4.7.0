@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+import "ItemParam.proto";
+
+// CmdId: 24626
+message AvatarUpgradeReq {
+	repeated ItemParam item_param_list = 6;
+	uint64 avatar_guid = 7;
+}

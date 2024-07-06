@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 6678
+message BartenderCompleteOrderRsp {
+	repeated uint32 affix_list = 5;
+	uint32 formula_id = 8;
+	uint32 finish_order_id = 12;
+	bool is_new = 13;
+	uint32 quest_id = 14;
+	int32 retcode = 15;
+}

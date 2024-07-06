@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 229
+message BartenderGetFormulaRsp {
+	repeated uint32 affix_list = 1;
+	int32 retcode = 3;
+	bool is_new = 14;
+	uint32 formula_id = 15;
+}

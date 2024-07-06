@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+// CmdId: 4095
+message QuestRenameAvatarRsp {
+  uint32 rename_id = 9;
+  string avatar_name = 11;
+  int32 retcode = 13;
+  bool is_check = 14;
+}
